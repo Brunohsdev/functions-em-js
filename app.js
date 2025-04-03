@@ -1,21 +1,40 @@
-let titulo = document.querySelector('h1');
 
-titulo.innerHTML = 'Hora do desafio';
+//função hello word
+function helloWord(){
+   console.log("Olá, mundo!");
+}
+helloWord();
 
-function botaoclicado(){
-    console.log('O botão foi clicado');
+//função hello com nome
+function helloNome(nome){
+    console.log(`Olá, ${nome}!`)
 }
-function euamojs(){
-    alert('Eu amo JS');
-}
-function nomedecidade(){
-    let cidade = prompt('diga uma cidade do brasil: ');
-    alert(`Estive em ${cidade} e lembrei de você`);
-}
+helloNome('bruno');
 
-function botaosomar(){
-    let numero1 = Number(prompt("Digite um número"));
-    let numero2 = Number(prompt("Digite um número"));
-    let soma = numero1 + numero2;
-    alert(`A soma de ${numero1} + ${numero2} é igual a ${soma}`);
+//função que retorna um número dobrado
+function numeroDobrado(numero1){
+    return numero1*2;
 }
+let numeroDobrados = numeroDobrado(3);
+console.log(numeroDobrados);
+
+//função media de 3 números
+function media (a, b,c){
+    return (a+b+c)/3;
+}
+mediana = media(9,9,9)
+console.log(mediana);
+
+//função maior numero
+function maiorNumero(a,b){
+    return a > b ? a: b;
+}
+maior=maiorNumero(2,4);
+console.log(maior)
+
+//função que recebe multiplica ele por ele mesmo
+function potencial(a){
+    return a*a;
+}
+multiplicado = potencial(6);
+console.log(multiplicado);
